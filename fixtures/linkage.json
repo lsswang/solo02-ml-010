@@ -1,0 +1,131 @@
+{
+  "ordinary": {
+    "training_case": "ordinary",
+    "prior": 0.5,
+    "nodes": [
+      {
+        "id": "a",
+        "source": "A"
+      },
+      {
+        "id": "b",
+        "source": "B"
+      },
+      {
+        "id": "c",
+        "source": "C"
+      }
+    ],
+    "duplicate_free_sources": [
+      "A",
+      "B",
+      "C"
+    ],
+    "pairs": [
+      {
+        "left": "a",
+        "right": "b",
+        "values": [
+          1,
+          1
+        ]
+      },
+      {
+        "left": "a",
+        "right": "c",
+        "values": [
+          1,
+          1
+        ]
+      },
+      {
+        "left": "b",
+        "right": "c",
+        "values": [
+          1,
+          0
+        ]
+      }
+    ]
+  },
+  "external_table": {
+    "dimensions": 2,
+    "q0": [
+      0.04,
+      0.06,
+      0.1,
+      0.8
+    ],
+    "q1": [
+      0.4,
+      0.3,
+      0.25,
+      0.05
+    ],
+    "prior": 0.5,
+    "nodes": [
+      {
+        "id": "a1",
+        "source": "a"
+      },
+      {
+        "id": "a2",
+        "source": "a"
+      },
+      {
+        "id": "b1",
+        "source": "b"
+      },
+      {
+        "id": "b2",
+        "source": "b"
+      }
+    ],
+    "duplicate_free_sources": [
+      "a",
+      "b"
+    ],
+    "pairs": [
+      {
+        "left": "a1",
+        "right": "b1",
+        "values": [
+          0,
+          0
+        ]
+      },
+      {
+        "left": "a1",
+        "right": "b2",
+        "values": [
+          0,
+          1
+        ]
+      },
+      {
+        "left": "a2",
+        "right": "b1",
+        "values": [
+          1,
+          0
+        ]
+      },
+      {
+        "left": "a2",
+        "right": "b2",
+        "values": [
+          1,
+          1
+        ]
+      }
+    ],
+    "changed_pair": {
+      "left": "a1",
+      "right": "b2",
+      "values": [
+        null,
+        1
+      ]
+    }
+  }
+}

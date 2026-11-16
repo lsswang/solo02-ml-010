@@ -1,0 +1,192 @@
+{
+  "two_sources": {
+    "nodes": [
+      {
+        "id": "a1",
+        "source": "a"
+      },
+      {
+        "id": "a2",
+        "source": "a"
+      },
+      {
+        "id": "b1",
+        "source": "b"
+      },
+      {
+        "id": "b2",
+        "source": "b"
+      }
+    ],
+    "duplicate_free_sources": [
+      "a",
+      "b"
+    ],
+    "edges": [
+      [
+        "a1",
+        "b1",
+        9
+      ],
+      [
+        "a1",
+        "b2",
+        8
+      ],
+      [
+        "a2",
+        "b1",
+        8
+      ],
+      [
+        "a2",
+        "b2",
+        0
+      ]
+    ]
+  },
+  "three_sources_positive": {
+    "nodes": [
+      {
+        "id": "a",
+        "source": "A"
+      },
+      {
+        "id": "b",
+        "source": "B"
+      },
+      {
+        "id": "c",
+        "source": "C"
+      }
+    ],
+    "duplicate_free_sources": [
+      "A",
+      "B",
+      "C"
+    ],
+    "edges": [
+      [
+        "a",
+        "b",
+        4
+      ],
+      [
+        "a",
+        "c",
+        3
+      ],
+      [
+        "b",
+        "c",
+        2
+      ]
+    ]
+  },
+  "three_sources_signed": {
+    "nodes": [
+      {
+        "id": "a",
+        "source": "A"
+      },
+      {
+        "id": "b",
+        "source": "B"
+      },
+      {
+        "id": "c",
+        "source": "C"
+      }
+    ],
+    "duplicate_free_sources": [
+      "A",
+      "B",
+      "C"
+    ],
+    "edges": [
+      [
+        "a",
+        "b",
+        6
+      ],
+      [
+        "a",
+        "c",
+        -20
+      ],
+      [
+        "b",
+        "c",
+        5
+      ]
+    ]
+  },
+  "near_tie": {
+    "nodes": [
+      {
+        "id": "a",
+        "source": "A"
+      },
+      {
+        "id": "b",
+        "source": "B"
+      },
+      {
+        "id": "c",
+        "source": "C"
+      }
+    ],
+    "duplicate_free_sources": [
+      "A",
+      "B",
+      "C"
+    ],
+    "edges": [
+      [
+        "a",
+        "b",
+        1
+      ],
+      [
+        "a",
+        "c",
+        1.000000005
+      ],
+      [
+        "b",
+        "c",
+        -3
+      ]
+    ]
+  },
+  "zero_graph": {
+    "nodes": [
+      {
+        "id": "a1",
+        "source": "a"
+      },
+      {
+        "id": "a2",
+        "source": "a"
+      },
+      {
+        "id": "b1",
+        "source": "b"
+      },
+      {
+        "id": "b2",
+        "source": "b"
+      }
+    ],
+    "duplicate_free_sources": [
+      "a",
+      "b"
+    ],
+    "edges": []
+  },
+  "empty": {
+    "nodes": [],
+    "duplicate_free_sources": [],
+    "edges": []
+  }
+}
